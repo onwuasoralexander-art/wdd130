@@ -40,3 +40,9 @@ aside {
     width: 20em;
     text-align: center;
 }
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
