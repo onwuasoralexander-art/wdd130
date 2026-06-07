@@ -17,9 +17,21 @@ body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     font-size: 20px;
+    max-width: 0 auto;
 }
 
-header,
+header {
+
+    width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: #d6d8ff;
+
+}
+
 main,
 footer {
     width: 1024px;
@@ -27,8 +39,8 @@ footer {
 }
 
 h1 {
-font-family: var(--heading-font);
-color: #eeff03;
+    font-family: var(--heading-font);
+    color: #eeff03;
 }
 
 h2 (font-family: var(--heading-font);
@@ -46,6 +58,11 @@ h2 (font-family: var(--heading-font);
 nav a {
     text-decoration: none;
     color: #333;
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #000;
+    background-color: white;
 
 }
 
@@ -129,4 +146,120 @@ header img {
 .adventure-gallery img {
     width: 100%;
     height: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    border: 1px solid #333;
+    justify-content: right;
+}
+
+.company-info {
+    text-align: center;
+    padding: 30px;
+
+}
+
+.company-info h1 {
+    margin-bottom: 15px;
+    color: #445;
+}
+
+.company-info p {
+    margin: 5px 0;
+}
+
+/* Contact Section */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    padding: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    background-color: #d6d8ff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Employee Section */
+.employees {
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.employees h2 {
+    margin-bottom: 20px;
+    color: #445;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.employees h2 {
+    grid-column: 1 / 4;
+}
+
+.employees figure img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #d6d8ff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer img {
+    width: 35px;
+    margin: 10px;
 }
